@@ -1,4 +1,3 @@
-plushu-rethinkdb-service
-========================
+# plushu-rethinkdb-service
 
 Plushu service module for RethinkDB
