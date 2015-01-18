@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
 
-# If we've got a volume and an image
-if [[ -d "$1/data" && -f "$1/docker/IMAGE" ]]; then
-  printf '\n-v %q %q\n' "$1/data:/data" "$(<"$1/docker/IMAGE")"
-fi
+printf '\n-v %q %q\n' "$1/data:/data" "$(<"$1/docker/IMAGE")"
